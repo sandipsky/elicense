@@ -1,0 +1,107 @@
+body{
+    margin: 0px;
+    background-color: whitesmoke;
+}
+
+header {
+    background-color: white;
+    height: 120px;
+    color: white;
+}
+.gov img
+{
+    float: left;
+    height: 90px;
+    width: 120px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.nep img
+{
+    margin-top: -90px;
+    float: right;
+    height: 90px;
+    width: 80px;
+    
+    margin-right: 30px;
+
+}
+.info h2{
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    margin-right: 100px
+}
+ul
+{
+    background-color: midnightblue;
+    float: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 20px;
+    width: 100%;
+}
+ul li
+{
+    display: inline-block;
+    position: relative;
+}
+ul li ul
+{
+    position: absolute;
+    top: 66px;
+    right: 0px;
+    left: 0px;
+    width: fit-content;
+    display: none;
+    background-color: white;
+    z-index: 9999;
+}
+
+
+ul li a
+{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 21px;
+    font-size: 1.2em;
+}
+ul li a:hover
+{
+    background-color: #006669;
+    transition: ease 0.5s;
+     
+
+    cursor: pointer;
+      
+}
+button{
+    background-color: midnightblue;
+    color: whitesmoke;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: medium;
+    margin-left: 50%;
+}
+
+
+.text 
+{
+    background-color: white;
+    margin-top: 100px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 30px;
+    padding: 10px;
+    font-size: larger;
+}
+
+.text h1{
+    text-align: center;
+    
+}
