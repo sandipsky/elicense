@@ -1,18 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Candal&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Candal&family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
 body{
-    margin: 0px;
+    width: 100%; 
+    background-image: url(/static/images/pic.jpg); 
+    
+    
+    background-size: cover; 
+    background-position: center; 
+    margin: 0;
+    padding: 0;
     background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+}
+h1,h2,h3,p,a{
+    font-family: 'Candal';
+}
+header {
+    width: 100%; 
+    background-image: url(hi.jpg); 
+    
+    
+    background-size: cover; 
+    background-position: center; 
+
+    
+    
+    margin-top: 0;
+    
+    height: 120px;
+    
 }
 
-header {
-    background-color: white;
-    height: 120px;
-    color: white;
-}
+   
+
 .gov img
 {
     float: left;
-    height: 90px;
-    width: 120px;
+    height: 100px;
+    width: 130px;
     margin-top: 10px;
     margin-left: 30px;
 }
@@ -27,10 +63,10 @@ header {
 
 }
 .info h2{
-    color: black;
-    font-size: 15px;
+    color: darkred;
+    font-size: 20px;
     text-align: center;
-    margin-right: 100px
+    margin-right: 110px;
 }
 ul
 {
@@ -39,24 +75,15 @@ ul
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
-    margin-right: 20px;
+    margin-right: 0px;
     width: 100%;
+    padding-left: 0%;
+    
 }
 ul li
 {
     display: inline-block;
     position: relative;
-}
-ul li ul
-{
-    position: absolute;
-    top: 66px;
-    right: 0px;
-    left: 0px;
-    width: fit-content;
-    display: none;
-    background-color: white;
-    z-index: 9999;
 }
 
 
@@ -77,7 +104,281 @@ ul li a:hover
     cursor: pointer;
       
 }
+ul li a:active
+{
+    background-color: #006669;
+}
+
+ul lj
+{
+    display: inline-block;
+    position: relative;
+    float: right;
+}
+
+
+ul lj a
+{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 21px;
+    font-size: 1.2em;
+}
+ul lj a:hover
+{
+    background-color: #006669;
+    transition: ease 0.5s;
+     
+
+    cursor: pointer;
+      
+}
 button{
+    background-color: midnightblue;
+    color: whitesmoke;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: medium;
+    margin-left: 48%;
+    margin-top: 90px;
+}
+button:hover{
+    background-color: #006669;
+    transition: ease 0.5s;
+     
+
+    cursor: pointer;
+}
+
+/*About us */
+
+.text 
+{
+    background-color: antiquewhite;
+    margin-top: 110px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 50px;
+    padding: 10px;
+    font-size: larger;
+    
+}
+
+.text1 h1{
+    text-align: center;
+    
+}
+.text1
+{
+    background-color: antiquewhite;
+    margin-top: 110px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 50px;
+    padding: 10px;
+    font-size: larger;
+}
+.office
+{
+    background-color: antiquewhite;
+    margin-top: 40px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 50px;
+    padding: 10px;
+    font-size: larger;
+}
+.office h1{
+    text-align: center;
+    
+}
+
+/* index info */
+.index-info .text2
+{
+    background-color: antiquewhite;
+    margin-top: 50px;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 50px;
+    padding: 10px;
+    font-size: larger;
+    float: right;
+    width: 33%;
+    
+    
+}
+
+.index-info .text2 h2{
+    text-align: center;
+
+}
+
+.index-info .office1
+{
+    background-color: antiquewhite;
+    margin-top: 0;
+    margin-left: 60%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    padding: 10px;
+    font-size: larger;
+    float: right;
+}
+.index-info .office1 h1{
+    text-align: center;
+    
+}
+
+
+.index-info .text3
+{
+    background-color: aqua;
+    
+    
+    margin-top: -540px;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 50px;
+    padding: 10px;
+    font-size: larger;
+    float: left;
+    width: 33%;
+    
+    
+}
+
+.index-info .text4 h1{
+
+    text-align: center;
+    background-color: antiquewhite;
+    
+    
+    margin-top: -590px;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 50px;
+    padding: 10px;
+    font-size: larger;
+    float: left;
+    width: 33%;
+
+}
+
+
+/*apply */
+
+.per h1{
+    text-align: center;
+}
+
+.auth-content1
+{
+    
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+    
+    padding: 30px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    position: relative;
+}
+
+.auth-content1 .form-title
+{
+    width: 100%;
+    
+    text-align: center;
+    font-size: 30px;
+}
+
+.auth-content1 form div
+{
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 25px;
+    
+}
+
+.auth-content1 .text-input
+{
+    width: 100%;
+    padding: 5px;
+    font-size: 15px;
+}
+.btn-big1
+{
+    background-color: midnightblue;
+    color: whitesmoke;
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: larger;
+    margin-left: 40%;
+    margin-top: 40px;
+    
+    
+}
+.btn-big1:hover
+{
+    background-color: #006669;
+    transition: ease 0.5s;
+     
+
+    cursor: pointer;
+    color: white;
+}
+
+
+
+
+
+
+
+/* AUTH */
+.auth-content
+{
+    width: 30%;
+    
+    margin: 100px auto;
+    padding: 30px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+}
+
+.auth-content .form-title
+{
+    width: 100%;
+    
+    text-align: center;
+    font-size: 30px;
+}
+
+.auth-content form div
+{
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 25px;
+    
+}
+
+.auth-content .text-input
+{
+    width: 100%;
+    padding: 5px;
+    font-size: 15px;
+}
+.btn-big
+{
+    
     background-color: midnightblue;
     color: whitesmoke;
     border-radius: 15px;
@@ -86,22 +387,180 @@ button{
     padding-top: 5px;
     padding-bottom: 5px;
     font-size: medium;
-    margin-left: 50%;
-}
-
-
-.text 
-{
-    background-color: white;
-    margin-top: 100px;
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-bottom: 30px;
-    padding: 10px;
-    font-size: larger;
-}
-
-.text h1{
-    text-align: center;
+    margin-left: 40%;
+    margin-top: 10px;
     
 }
+.btn-big:hover
+{
+    background-color: #006669;
+    transition: ease 0.5s;
+     
+
+    cursor: pointer;
+    color: white;
+}
+
+.form-errors 
+{
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.3);
+    padding: 5px;
+    border-radius: 2px;
+   
+}
+.form-errors span
+{
+    color: #444;
+    opacity: 100%;
+    display: block;
+}
+
+.user
+{
+    position: absolute;
+    right: 6%;
+    top: 8%;
+    width: 80px;
+    height: 80px;
+}
+
+.user img
+{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+/* footer */
+footer
+{
+  
+  color: #e0e0e0;
+  background-color: #444;
+  height: 60px;
+  text-align: center;
+  align-self: flex-end;
+  width: 100%;
+  margin-bottom: -10px;
+  position: absolute;
+  bottom: 0;
+
+ 
+
+  
+}
+footer p
+{
+    
+    margin-top: 20px;
+    padding-top: 20px;
+    margin: auto;
+}
+
+
+
+
+
+.slider{
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.slides{
+    margin-top: 0px;
+    width: 450%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slides{
+    width: 20%;
+    transition: 2s;
+}
+
+.slides img{
+    
+    width: 1400px;
+    height: 500px;
+  
+}
+
+
+/*navigation manual */
+
+.navigation-manual{
+    position: absolute;
+    width: 100%;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.manual-btn{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    margin-top: 510px;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 100px;
+}
+
+.manual-btn:hover{
+    background: #40D3DC;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -520%;
+}
+#radio3:checked ~ .first{
+    margin-left: -1040%;
+}
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.navigation-auto div{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-manual .auto-btn1{
+    background: #40D3DC;
+}
+#radio2:checked ~ .navigation-manual .auto-btn2{
+    background: #40D3DC;
+}
+#radio3:checked ~ .navigation-manual .auto-btn3{
+    background: #40D3DC;
+}
+
+

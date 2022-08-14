@@ -1,50 +1,104 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="style.css"> 
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <div class="gov">
-                <img src="nep.jpg">
 
+{% extends 'base.html' %}
+{% block content %}
+    <div class="slider">
+        <div class="slides">
+           
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            
+
+            <div class="slide first">
+                <img src="/static/images/11.jpg" alt="slider-image">
             </div>
-            <div class="info">
-                <h2>Government of Nepal<br>
-
-                    Ministry of Physical Infrastructure and Transport<br>
-                    
-                    Department of Transport Management<br>
-                    
-                    Online Driving License System
-                </h2>
+            <div class="slide">
+                <img src="/static/images/22.jpg" alt="slider-image">
             </div>
-            <div class="nep">
-                <img src="ne.gif">
-
+            <div class="slide">
+                <img src="/static/images/33.jpg" alt="slider-image">
             </div>
             
             
-        
+            
+
+
+            
+
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+               
+
+            </div>
         </div>
-    </header>
-    <ul class="nav" id="menu1">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="apply.html">Apply</a></li>
-        <li><a href="aboutus.html">AboutUs</a></li>
-        
-    </ul>
-    <button type="button">Apply Now</button>
+       
+    </div>
+    
+   
+
+    <script type="text/javascript">
+        var counter=1;
+        setInterval(function(){
+            document.getElementById('radio'+ counter).checked=true;
+            counter++;
+            if(counter>3){
+                counter=1;
+            }
+        },5000);
+    </script>
     
 
-    
+    <a href="{% url 'apply' %}">
+        <button>Apply Now</button>
+    </a> 
 
-    
-</body>
-</html>
+
+
+    <div class="index-info">
+        <div class="text2">
+            <h1> Contact Address</h1>
+            <p>
+                Address: Minbhawan, Kathmandu<br>
+                Phone No.: 014479691,014479994<br>
+                Fax Number: N/A<br>
+                Help Desk: N/A<br>
+                Email: info@dotm.gov.np<br>
+            </p>
+        </div>
+        <div class="office1">
+            <h1> Office Hours</h1>
+            <p>
+                <b>Summer Season:</b><br>
+                Sunday-Thursday 10:00 A.M.-5:00 P.M.<br>
+                Friday 10:00 A.M.-3:00 P.M.<br>
+                <b>Winter Season:</b><br>
+                Sunday-Thursday 10:00 A.M-4:00 P.M.<br>
+                Friday 10:00 A.M.-3:00 P.M.<br><br>
+                Close on Public Holidays.<br>
+            </p>
+            
+        </div>
+        <div class="text4">
+            <h1> Important Links</h1><br><br>
+           
+        </div>
+        <div class="text3">
+            <p>
+                
+                <li><a href="login.html">■ Online Driving License System</a></li><br>
+                <li><a href="https://hsenp.dotm.gov.np/everest-pub">■ Embossed Number Plate System</a></li><br>
+                <li><a href="https://www.dotm.gov.np/DrivingLicense/SearchLicense">■ Search Driving License</a></li><br>
+                <li><a href="https://www.dotm.gov.np/MainData/TaxRateCircularDirection">■ Tax Rate, Circular And Directions</a></li><br>
+                <li><a href="https://www.dotm.gov.np/MainData/TaxRateCircularDirection">■ Complaint, Suggestion And Curiosity</a></li><br>
+                <li><a href="https://onlineevrsreg.dotm.gov.np/Nepal_VRSREG/home">■ Online Vehicle Registration System</a></li><br>
+                
+                
+            
+        </p>
+        </div>
+    </div>
+    <br>
+    <br>
+{% endblock %}

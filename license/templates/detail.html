@@ -3,22 +3,20 @@
 {% block content %}
 
     <div class="per">
-        <h1><u> Application Portal</u></h1>
+        <h1><u> Application Details</u></h1>
     </div>
 
     <div class="auth-content1">
-        
+        <div class="user">
+            <img src="{{aform.get_photo_url}}" alt="">
+        </div>
         <form action="" method="post" enctype="multipart/form-data">
 
-            {% csrf_token %}
-
-            {% if form.errors %}
-        <div class="form-errors">
-            <span>{{lform.category.error}}</span>
-        </div>
-        {% endif %}
             <h2 class="form-title">Personal Details</h2>
+            <br><br>
             <div>
+                
+                
                 <label for="firstname">First Name:</label><br>
                 {{aform.firstname}}
             </div>
@@ -33,10 +31,6 @@
             <div>
                 <label for="contact">Contact No:</label><br>
                 {{aform.phone}}
-            </div>
-            <div>
-                <label for="photo">Photo:</label><br>
-                {{aform.photo}}
             </div>
             <div>
                 <label for="father's name">Father's Name:</label><br>
@@ -88,10 +82,6 @@
                 <label for="dist">Issue District:</label><br>
                 {{aform.citizenshipdistrict}}
             </div>
-            <div>
-                <label for="front">Citizenship Photo:</label><br>
-                {{aform.citizenship}}
-            </div>
             
           
 
@@ -101,7 +91,7 @@
                 {{lform.category}}
             </div>
            
-            <input class="btn-big" type="submit" value="Submit">
+            
         </form><br>  
             
 

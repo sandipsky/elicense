@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <div class="per">
+        <h1><u> Dashboard</u></h1>
+    </div>
+
+    <div class="auth-content">
+        
+    <h2>Please Visit Our nearest office after 10 days of Form Submission</h2>
+    <br>
+    <h3>Required Documents</h3>
+    
+   <h4> Original Citizenship </h4>
+   <h4>Photocopy of Citizenship </h4>
+   <h4>Medical Report </h4>
+    <br>
+    <h3>Wait 3 months before applying for another category</h3>
+    <br>
+
+    {% if applied > 0 %}
+    <a href="{% url 'detail' %}" class="btn-big">View Form</a>
+    {% endif %}
+
+
+</div>
+
+{% endblock %}

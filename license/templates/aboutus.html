@@ -1,54 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="style.css"> 
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <div class="gov">
-                <img src="nep.png">
-
-            </div>
-            <div class="info">
-                <h2>Government of Nepal<br>
-
-                    Ministry of Physical Infrastructure and Transport<br>
-                    
-                    Department of Transport Management<br>
-                    
-                    Online Driving License System
-                </h2>
-            </div>
-            <div class="nep">
-                <img src="ne.png">
-
-            </div>
-            
-            
-        
-        </div>
-    </header>
-    <ul class="nav" id="menu1">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="apply.html">Apply</a></li>
-        <li><a href="aboutus.html">AboutUs</a></li>
-        
-    </ul>
-    
-
-    
-    <div class="text">
-        <h1> About Us</h1>
-        Department of Transport Management was established in 2041 B.S. for the smooth management of transport. The purpose of this department and its affiliation, as per Vehicle and Transport Management Act 2049 and Vehicle and Transport Management Rules 2054, is to provide safe, reliable and easy transportation service to the public and goods carrier.
-    </div>
+{% extends 'base.html' %}
+{% block content %}
    
+    
 
     
-</body>
-</html>
+    <div class="text1">
+        <h1><u> About Us</u></h1><br>
+        <p>Department of Transport Management was established in 2041 B.S. for the smooth management of transport. The purpose of this department and its affiliation, as per Vehicle and Transport Management Act 2049 and Vehicle and Transport Management Rules 2054, is to provide safe, reliable and easy transportation service to the public and goods carrier.Nepalese transport management is affected 
+        by existing topographical condition of the country. Due to this only means of transport used in the country are road transport and air transport. In this paper only road transport is discussed. During the Tenth Plan period, the vehicle transport management guideline was implemented. In the context of institutional strengthening of the transport system, construction of a building for the department of Transport Management has been completed.</p>
+    </div>
+
+{% endblock %}

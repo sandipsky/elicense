@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <div class="auth-content">
+        <form action="" method="post">
+            {% csrf_token %}
+            <h2 class="form-title">Sign Up</h2>
+            <div>
+                <label for="username">Username</label><br>
+                {{form.username}}
+            </div>
+
+            <div>
+                <label for="password1">Password</label><br>
+                {{form.password1}}
+            </div>
+
+            <div>
+                <label for="password2">Confirm Password</label><br>
+                {{form.password2}}
+            </div>
+            <div>
+                <input type="submit" class="btn btn-big" name="register-btn" value="Sign Up">
+            </div>
+            <p>Already have an account? <a href="apply.html">Login</a></p>
+
+        </form>
+    </div>
+{% endblock %}
